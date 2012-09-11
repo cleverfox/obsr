@@ -1,0 +1,24 @@
+BEGIN-VENDOR   bsr
+
+ATTRIBUTE   bsr-client-local-ip  1     ipaddr
+ATTRIBUTE   bsr-rule             2     string
+ATTRIBUTE   bsr-pipe             3     string
+ATTRIBUTE   bsr-table-add        4     string
+ATTRIBUTE   bsr-service-info     5     string
+
+ATTRIBUTE   bsr-client-wan-ip    6     ipaddr
+
+#ATTRIBUTE  bsr-filter           6     string
+#ATTRIBUTE  bsr-limit            7     string
+
+#ATTRIBUTE  bsr-input-octets     8     string autotag
+#ATTRIBUTE  bsr-input-packets    9     string autotag
+#ATTRIBUTE  bsr-output-octets    10    string autotag
+#ATTRIBUTE  bsr-output-packets   11    string autotag
+#ATTRIBUTE  bsr-link             12    string
+#ATTRIBUTE  bsr-bundle           13    string
+#ATTRIBUTE  bsr-iface            14    string
+#ATTRIBUTE  bsr-iface-index      15    integer
+#ATTRIBUTE  bsr-input-acct       16    string
+#ATTRIBUTE  bsr-output-acct      17    string
+#ATTRIBUTE  bsr-drop-user        154   integer

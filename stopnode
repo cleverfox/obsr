@@ -1,0 +1,4 @@
+#! /bin/sh -x
+
+ngctl shutdown obsr0:
+kldunload ng_obsr

@@ -1,0 +1,11 @@
+#! /bin/sh -x
+#
+
+#kldload ng_obsr
+ngctl mkpeer ipfw: obsr 10 lan
+ngctl name ipfw:10 obsr0
+ngctl connect ipfw: obsr0: 20 wan
+ngctl mkpeer obsr0: tag wanrej th1
+ngctl msg obsr0:wanrej sethookin { thisHook=\"th1\" ifNotMatch=\"th2\" \} 
+ngctl msg obsr0:wanrej sethookout { thisHook=\"th1\" tag_cookie=1148380143 tag_id=10 \}
+ngctl connect ipfw: obsr0:wanrej 21 th2

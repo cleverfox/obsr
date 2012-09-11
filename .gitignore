@@ -1,0 +1,10 @@
+*.iml
+/.idea/
+*.o
+*/tags
+libcli/test
+*~
+memdump.txt
+meminfo.txt
+obsr.conf
+
